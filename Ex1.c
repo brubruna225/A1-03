@@ -2,10 +2,9 @@
 
     //Uma empresa deseja calcular a depreciação de seus bens. 
     //Para tanto, desenvolver um programa que obtenha a taxa de depreciação anual para os bens, o valor do bem a ser depreciado e o período em anos.
-    
 
-    float valueBem, valueDepreciation, valueBemDepreciation, totalDepreciation;
-    int period, b;
+float valueBem, valueDepreciation, valueBemDepreciation, totalDepreciation;
+int period, b;
 
 int main() {
     printf("Informe valor a ser depreciado:  ");
