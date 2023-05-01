@@ -30,7 +30,6 @@ int main() {
             printf("%i\t\t%.2f\t\t\t%.2f\t\t\t\t%.2f\n", b, valueBem, valueDepreciation,valueBemDepreciation);
         }
     valueBem = valueBem - valueDepreciation;
-    totalDepreciation = totalDepreciation + valueDepreciation;
     }
     printf("=======================================================");
     printf(" \n Depreciation acumulada : %.2f \n", totalDepreciation );
