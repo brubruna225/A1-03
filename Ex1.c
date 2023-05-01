@@ -21,7 +21,7 @@ int main() {
         valueDepreciation = valueBem * (1.5/100);
         //Valor depreciado = valor do bem * (taxa de depreciação / 100)
 
-        Depreciation = Depreciation + valueDepreciation;
+        totalDepreciation = totalDepreciation + valueDepreciation;
         // Valor do bem depreciado = valor do bem – valor depreciado
 
         if(b==1){
@@ -30,10 +30,10 @@ int main() {
             printf("%i\t\t%.2f\t\t\t%.2f\t\t\t\t%.2f\n", b, valueBem, valueDepreciation,valueBemDepreciation);
         }
     valueBem = valueBem - valueDepreciation;
-    Depreciation = Depreciation + valueDepreciation;
+    totalDepreciation = totalDepreciation + valueDepreciation;
     }
     printf("=======================================================");
-    printf(" \n Depreciation acumulada : %.2f \n", Depreciation );
+    printf(" \n Depreciation acumulada : %.2f \n", totalDepreciation );
 
     return 0;
 }
