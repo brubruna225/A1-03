@@ -37,7 +37,7 @@ int main() {
         if (result != 0)
         {
           printf("%d notas(s) de 200 \n\t", result);
-          sum = sum - (result*200)//ultiliza no prox
+          sum = sum - (result*200); //ultiliza no prox
         }
         
         //nota100
@@ -46,7 +46,7 @@ int main() {
         if (result != 0)
         {
           printf("%d notas(s) de 100 \n\t", result);
-          sum = sum - (result*100)//ultiliza no prox
+          sum = sum - (result*100); //ultiliza no prox
         }
 
         //nota50
@@ -55,7 +55,7 @@ int main() {
         if (result != 0)
         {
           printf("%d notas(s) de 50 \n\t", result);
-          sum = sum - (result*50)//ultiliza no prox
+          sum = sum - (result*50); //ultiliza no prox
         }
         //nota20
         result = (int)sum/20;
@@ -63,7 +63,7 @@ int main() {
         if (result != 0)
         {
           printf("%d notas(s) de 20 \n\t", result);
-          sum = sum - (result*20)//ultiliza no prox
+          sum = sum - (result*20); //ultiliza no prox
         }
         //nota10
         result = (int)sum/10;
@@ -71,7 +71,7 @@ int main() {
         if (result != 0)
         {
           printf("%d notas(s) de 10 \n\t", result);
-          sum = sum - (result*10)//ultiliza no prox
+          sum = sum - (result*10); //ultiliza no prox
         }
         //nota5
         result = (int)sum/5;
@@ -79,7 +79,7 @@ int main() {
         if (result != 0)
         {
           printf("%d notas(s) de 5 \n\t", result);
-          sum = sum - (result*5)
+          sum = sum - (result*5);
         }
         //nota2
         result = (int)sum/2;
@@ -87,7 +87,7 @@ int main() {
         if (result != 0)
         {
           printf("%d notas(s) de 2 \n\t", result);
-          sum = sum - (result*2)
+          sum = sum - (result*2);
         }
 
         //moeda1
@@ -103,16 +103,21 @@ int main() {
       break;
 
       case 2:
-      printf("\n\t");
-      printf("Deseja repitir o programa(S ou N)?");
-      scanf("%c", &answer);   
+        printf("\n\t");
+        printf("Deseja repitir o programa(S ou N)?");
+        scanf("%c", &answer);   
 
       if(answer == 's' || answer == 'S'){
         sum = 0; quant=0; average=0; b=0;
-      } if(answer == 'n' || answer == 'N'){
-        b = 20;// ñ existente
-        break;
       }
+      if(answer == 'n' || answer == 'N'){
+        b = 20;
+      }
+      break;
+
+      default:
+        printf("Caractere Invalido!");
+      break;  
     }
   }
   return 0;
